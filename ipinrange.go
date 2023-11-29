@@ -70,7 +70,7 @@ func main() {
 	)
 
 	switch {
-	case lenArg >= 2 && os.Args[1] == "-N":
+	case lenArg >= 2 && os.Args[1] == "-n":
 		negativeFlag = true
 		fallthrough
 
@@ -78,7 +78,7 @@ func main() {
 		netARg = os.Args[lenArg-1]
 
 	default:
-		fmt.Printf("Usage: ipinrange [-N(egative)] []network/x")
+		fmt.Printf("Usage: ipinrange [-n(egative)] []network/x")
 		os.Exit(-1)
 	}
 
