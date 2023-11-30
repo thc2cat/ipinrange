@@ -11,7 +11,7 @@ When searching for ip source of trouble, i needed an ip extractor ( see also ext
 ```shell
 $ go mod tidy & &go build
 
-$ rg -z someone sftp_logs/$date/uvsq.fr-mtaauth.log.gz  | ipinrange -n local 
+$ rg -z someone mtaauth.log.gz  | ipinrange -n local 
 
 Will print only lines containing ip addresses not matching my networks      
                      
