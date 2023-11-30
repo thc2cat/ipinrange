@@ -60,13 +60,6 @@ func main() {
 			"240.0.0.0/4",
 			"255.255.255.255/32",
 		}
-
-		local = []string{
-			"193.51.24.0/21",
-			"193.51.32.0/21",
-			"193.51.40.0/23",
-			"193.51.42.0/24",
-		}
 	)
 
 	switch {
@@ -74,7 +67,7 @@ func main() {
 		negativeFlag = true
 		fallthrough
 
-	case len(os.Args) > 1:
+	case lenArg > 1:
 		netARg = os.Args[lenArg-1]
 
 	default:
