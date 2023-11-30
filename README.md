@@ -9,7 +9,7 @@ When searching for ip source of trouble, i needed an ip extractor ( see also ext
 ## Usage
 
 ```shell
-$ go mod tidy & &go build
+$ go mod tidy & go build
 
 $ rg -z someone mtaauth.log.gz  | ipinrange -n local 
 
